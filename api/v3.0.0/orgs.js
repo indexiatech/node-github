@@ -179,6 +179,7 @@ var orgs = module.exports = {
      *  - page (Number): Optional. Page number of the results to fetch. Validation rule: ` ^[0-9]+$ `.
      *  - per_page (Number): Optional. A custom page size up to 100. Default is 30. Validation rule: ` ^[0-9]+$ `.
      *  - filter (String): Optional.  Validation rule: ` ^(all|2fa_disabled)$ `.
+     *  - role (String): Optional.  Validation rule: ` ^(all|admin|member)$ `.
      **/
     this.getMembers = function(msg, block, callback) {
         var self = this;
